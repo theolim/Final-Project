@@ -1,0 +1,237 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    tools:context=".MainActivity"
+    android:background="#c8ffe111"
+    android:baselineAligned="false">
+
+    <TabHost
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:id="@+id/tabHost"
+        android:layout_weight="1">
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:orientation="vertical">
+
+            <TabWidget
+                android:id="@android:id/tabs"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"></TabWidget>
+
+
+            <FrameLayout
+                android:id="@android:id/tabcontent"
+                android:layout_width="fill_parent"
+                android:layout_height="match_parent">
+
+                <LinearLayout
+                    android:id="@+id/Promos"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:orientation="vertical">
+
+                    <TableLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal">
+
+                        <ImageButton
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/btnpromo1"
+                            android:background="@drawable/promo1"
+                            android:layout_marginTop="32dp"
+                            android:layout_alignParentTop="true"
+                            android:layout_centerHorizontal="true"
+                            android:onClick="store"/>
+
+                        <ImageButton
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/btnpromo2"
+                            android:background="@drawable/promo3"
+                            android:layout_marginTop="10dp"
+                            android:layout_centerVertical="true"
+                            android:layout_centerHorizontal="true"
+                            android:onClick="storeDakasi"/>
+                    </TableLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/Nearby"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:orientation="vertical">
+
+                    <TableLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:id="@+id/tableLayout" >
+
+                        <Button
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Espana"
+                            android:id="@+id/btnespana"
+                            android:layout_gravity="center_horizontal"
+                            android:layout_marginTop="20dp"
+                            android:onClick="liststore" />
+
+                        <Button
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="P. Noval"
+                            android:id="@+id/btnnoval"
+                            android:layout_gravity="center_horizontal"
+                            android:onClick="liststoreNov" />
+
+                        <Button
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Dapitan"
+                            android:id="@+id/btndapitan"
+                            android:layout_gravity="center_horizontal"
+                            android:layout_above="@+id/btnlacson"
+                            android:layout_centerHorizontal="true"
+                            android:onClick="liststoreDap" />
+
+                        <Button
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Lacson"
+                            android:id="@+id/btnlacson"
+                            android:layout_gravity="center_horizontal"
+                            android:layout_alignParentBottom="true"
+                            android:layout_toRightOf="@+id/btnnoval"
+                            android:layout_toEndOf="@+id/btnnoval"
+                            android:onClick="liststoreLac" />
+
+                    </TableLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/New"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <ScrollView
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:id="@+id/scrollView" >
+
+                        <LinearLayout
+                            android:orientation="vertical"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <Button
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Bonchon"
+                                android:id="@+id/btnnew1"
+                                android:layout_gravity="center_horizontal"
+                                android:layout_marginTop="20dp"
+                                android:onClick="store"
+                                android:background="@drawable/bonchon"
+                                android:clickable="true" />
+
+                            <Button
+                                android:layout_width="163dp"
+                                android:layout_height="153dp"
+                                android:text="Toribox"
+                                android:id="@+id/btnnew2"
+                                android:layout_gravity="center_horizontal"
+                                android:background="@drawable/toribox1"
+                                android:onClick="storeToribox"
+                                android:layout_marginTop="10dp"/>
+
+                            <Button
+                                android:layout_width="192dp"
+                                android:layout_height="93dp"
+                                android:text="Dimsum Treats"
+                                android:id="@+id/btnnew3"
+                                android:layout_gravity="center_horizontal"
+                                android:layout_above="@+id/btnnew4"
+                                android:layout_centerHorizontal="true"
+                                android:onClick="storeDimsum"
+                                android:background="@drawable/dimsum"
+                                android:layout_marginTop="10dp"/>
+                        </LinearLayout>
+                    </ScrollView>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/Menu"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:orientation="horizontal">
+
+                    <TableLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:id="@+id/tableLayout6" >
+
+                        <Button
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Chicken"
+                            android:id="@+id/btnchicken"
+                            android:layout_gravity="center_horizontal"
+                            android:layout_marginTop="20dp"
+                            android:onClick="liststoreChicken"/>
+
+
+                        <Button
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Seafood"
+                            android:onClick="underconstruction"
+                            android:id="@+id/btnseafood"
+                            android:layout_gravity="center_horizontal" />
+
+                        <Button
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Coffee"
+                            android:onClick="underconstruction"
+                            android:id="@+id/btncoffee"
+                            android:layout_gravity="center_horizontal"
+                            android:layout_above="@+id/btnmilktea"
+                            android:layout_centerHorizontal="true" />
+
+                        <Button
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Milk Tea"
+                            android:onClick="underconstruction"                            android:id="@+id/btnmilktea"
+                            android:layout_gravity="center_horizontal"
+                            android:layout_alignParentBottom="true"
+                            android:layout_toRightOf="@+id/btnseafood"
+                            android:layout_toEndOf="@+id/btnseafood" />
+
+                        <Button
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Dessert"
+                            android:id="@+id/btndessert"
+                            android:onClick="underconstruction"
+                            android:layout_gravity="center_horizontal"
+                            android:layout_alignParentBottom="true"
+                            android:layout_toRightOf="@+id/btnseafood"
+                            android:layout_toEndOf="@+id/btnseafood" />
+
+                    </TableLayout>
+                </LinearLayout>
+
+            </FrameLayout>
+
+        </LinearLayout>
+    </TabHost>
+</LinearLayout>

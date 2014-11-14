@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">UST Food Finder</string>
+    <string name="action_settings">Settings</string>
+    <string name="store_name">Bonchon</string>
+    <string name="info">Information</string>
+    <string name="title_activity_store_info">Bonchon</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="title_activity_liststore">Espana</string>
+    <string name="espana">Espana</string>
+    <string name="title_activity_liststore_dapitan">Dapitan</string>
+    <string name="title_activity_liststore_lacson">Lacson</string>
+    <string name="title_activity_liststore_noval">P. Noval</string>
+    <string name="title_activity_store_info_daksi">Dakasi</string>
+    <string name="title_activity_store_info_jollibee">Jollibee</string>
+    <string name="title_activity_store_info_mcdo">Mcdonalds</string>
+    <string name="title_activity_store_info_shakeys">Shakeys</string>
+    <string name="title_activity_store_info_dimsum">Dimsum Treats</string>
+    <string name="title_activity_store_info_toribox">Toribox</string>
+    <string name="title_activity_liststore_chicken">Chicken</string>
+    <string name="title_activity_underconstruction">Under Construction</string>
+
+</resources>

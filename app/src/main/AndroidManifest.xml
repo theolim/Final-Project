@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.theonicolo.ustfoodfinder" >
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name=".MainActivity"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".storeInfo"
+            android:label="@string/title_activity_store_info"
+            android:parentActivityName=".MainActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.theonicolo.ustfoodfinder.MainActivity" />
+        </activity>
+        <activity
+            android:name=".liststore"
+            android:label="@string/title_activity_liststore"
+            android:parentActivityName=".MainActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.theonicolo.ustfoodfinder.MainActivity" />
+        </activity>
+        <activity
+            android:name=".liststoreDapitan"
+            android:label="@string/title_activity_liststore_dapitan"
+            android:parentActivityName=".MainActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.theonicolo.ustfoodfinder.MainActivity" />
+        </activity>
+        <activity
+            android:name=".liststoreLacson"
+            android:label="@string/title_activity_liststore_lacson"
+            android:parentActivityName=".MainActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.theonicolo.ustfoodfinder.MainActivity" />
+        </activity>
+        <activity
+            android:name=".liststoreNoval"
+            android:label="@string/title_activity_liststore_noval"
+            android:parentActivityName=".MainActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.theonicolo.ustfoodfinder.MainActivity" />
+        </activity>
+        <activity
+            android:name=".storeInfoDaksi"
+            android:label="@string/title_activity_store_info_daksi"
+            android:parentActivityName=".MainActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.theonicolo.ustfoodfinder.MainActivity" />
+        </activity>
+        <activity
+            android:name=".storeInfoJollibee"
+            android:label="@string/title_activity_store_info_jollibee"
+            android:parentActivityName=".MainActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.theonicolo.ustfoodfinder.MainActivity" />
+        </activity>
+        <activity
+            android:name=".storeInfoMcdo"
+            android:label="@string/title_activity_store_info_mcdo"
+            android:parentActivityName=".MainActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.theonicolo.ustfoodfinder.MainActivity" />
+        </activity>
+        <activity
+            android:name=".storeInfoShakeys"
+            android:label="@string/title_activity_store_info_shakeys"
+            android:parentActivityName=".MainActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.theonicolo.ustfoodfinder.MainActivity" />
+        </activity>
+        <activity
+            android:name=".storeInfoDimsum"
+            android:label="@string/title_activity_store_info_dimsum"
+            android:parentActivityName=".MainActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.theonicolo.ustfoodfinder.MainActivity" />
+        </activity>
+        <activity
+            android:name=".storeInfoToribox"
+            android:label="@string/title_activity_store_info_toribox"
+            android:parentActivityName=".MainActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.theonicolo.ustfoodfinder.MainActivity" />
+        </activity>
+        <activity
+            android:name=".liststoreChicken"
+            android:label="@string/title_activity_liststore_chicken"
+            android:parentActivityName=".MainActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.theonicolo.ustfoodfinder.MainActivity" />
+        </activity>
+        <activity
+            android:name=".underconstruction"
+            android:label="@string/title_activity_underconstruction"
+            android:parentActivityName=".MainActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.theonicolo.ustfoodfinder.MainActivity" />
+        </activity>
+    </application>
+
+</manifest>
